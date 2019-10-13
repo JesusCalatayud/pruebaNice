@@ -1,0 +1,78 @@
+div.card{
+    width: 200px;
+    height: 320px;
+    border: 1px solid #ECECEC;
+    margin-bottom: 20px !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 1px 13px 2px rgba(43,43,43,0.07); 
+box-shadow: 0px 1px 13px 2px rgba(43,43,43,0.07);
+background: white;
+color: #212F3D;
+transition: all 0.8s;
+	-webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    
+}
+
+div.cardDark{
+    width: 200px;
+    height: 320px;
+    border: 1px solid rgb(53, 53, 53);
+    margin-bottom: 20px !important;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-box-shadow: 0px 1px 13px 2px rgba(43,43,43,0.07); 
+box-shadow: 0px 1px 13px 2px rgba(43,43,43,0.07);
+background: #1c1c1e;
+color: white;
+transition: all 0.8s;
+	-webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+}
+
+
+
+#album{
+    font-size: 14px;
+    margin: 20px 10px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+#artista{
+    margin: 10px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+#albumVertical{
+    font-size: 20px;
+    margin: 20px 10px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+   
+
+    
+    
+}
+
+#artistaVertical{
+    
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    
+}
+
+div.cajaAuxiliar{
+    border: 1px solid black;
+     width: 97%;
+     height: 200px;
+     margin: 10px 10px 10px 18px; 
+
+    
+   
+   
+}
