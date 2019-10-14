@@ -1,17 +1,19 @@
 .modoNormal{
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) !important;
     transition: all 0.8s;
 	-webkit-transition: 0.8s;
     -moz-transition: 0.8s;
     -webkit-box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.12); 
-    box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.12);
-    height: 60px;
+    box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.12) !important;
+    height: auto;
     position: fixed;
     width: 100%;
     z-index: 10;
     padding-top: 12px;
     padding-right: 100px;
+    padding-bottom: 5px;
     text-align: right;
+    
     
 }
 
@@ -20,21 +22,22 @@
     transition: all 0.8s;
 	-webkit-transition: 0.8s;
     -moz-transition: 0.8s;
-    -webkit-box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.12); 
-    box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.12);
-    height: 60px;
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(255,255,255,0.46); 
+    box-shadow: 0px 0px 12px -2px rgba(255,255,255,0.46);
+    height: auto;
     position: fixed;
     width: 100%;
     z-index: 10;
     padding-top: 12px;
     padding-right: 100px;
     text-align: right;
+    padding-bottom: 5px;
 }
 
 div.pseudoBody {
     padding-top: 100px;
     min-height: 100vh;
-    background: white;
+    background: #F8F8F8;
     transition: all 0.8s;
 	-webkit-transition: 0.8s;
     -moz-transition: 0.8s;
@@ -70,4 +73,5 @@ input:hover{
 ::placeholder{
     color: #1ABC9C;
 }
+
 
