@@ -1,0 +1,35 @@
+#estiloFooter{
+    color: #7B7D7D;
+    width: 100%;
+    height: 30px;
+    background: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+
+transition: all 0.8s;
+	-webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -webkit-box-shadow: 0px -3px 10px -1px rgba(0,0,0,0.11); 
+    box-shadow: 0px -3px 10px -1px rgba(0,0,0,0.11);
+
+}
+
+#estiloFooterOscuro{
+    color: #626567;
+    width: 100%;
+    height: 30px;
+    background: #1c1c1e;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 5px;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.16); 
+box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.16);
+transition: all 0.8s;
+-webkit-transition: 0.8s;
+-moz-transition: 0.8s;
+-webkit-box-shadow: 0px 0px 12px -2px rgba(255,255,255,0.46); 
+box-shadow: 0px 0px 12px -2px rgba(255,255,255,0.46);
+
+}
+

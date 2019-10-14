@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from './Cards.jsx';
+import Footer from './Footer.jsx';
 import { Row, Col } from 'reactstrap';
-
 import '../css/searchbar.css';
 
 export default class Searchbar extends React.Component {
@@ -33,7 +33,9 @@ export default class Searchbar extends React.Component {
             opacidadAlbum: 0.3,
             opacidadImagen: 1,
             NPAWcolor: 'black',
-            niceColor: 'black'
+            niceColor: 'black',
+            firma: 'block',
+            estiloFooter: 'estiloFooter'
         }
 
         this.fetchData = this.fetchData.bind(this);
@@ -48,6 +50,11 @@ export default class Searchbar extends React.Component {
 
 
     fetchData() {
+
+        this.setState({
+          firma: 'none'
+        });
+
         fetch(`https://itunes.apple.com/search?term=${this.state.buscar}&entity=${this.state.tipoBusqueda}&limit=20`)
             .then(data => data.json())
             .then(data => {
@@ -124,6 +131,7 @@ export default class Searchbar extends React.Component {
                 opacidadImagen: 0.6,
                 NPAWcolor: 'white',
                 niceColor: 'white',
+                estiloFooter: 'estiloFooterOscuro'
             });
         } else {
             this.setState({
@@ -139,7 +147,8 @@ export default class Searchbar extends React.Component {
                 cardAuxiliar: 'cajaAuxiliar',
                 opacidadImagen: 1,
                 NPAWcolor: 'black',
-                niceColor: 'black'
+                niceColor: 'black',
+                estiloFooter: 'estiloFooter'
 
 
             });
@@ -150,9 +159,12 @@ export default class Searchbar extends React.Component {
         alert("¡Muchas gracias por la oportunidad!");
     }
 
+
+   
     render() {
 
         let lista = [];
+        
 
 
         if (this.state.datos.length) {
@@ -163,7 +175,6 @@ export default class Searchbar extends React.Component {
 
         return (
             <div>
-
 
 <div className={this.state.searchbar}>
     <Row>               
@@ -190,15 +201,22 @@ export default class Searchbar extends React.Component {
 
                 <div className={this.state.pseudoBody}>
 
+                    <p style={{textAlign: "center", opacity: "0.2", fontSize: "12px", display: this.state.firma, color: this.state.NPAWcolor, paddingTop:"20px"}}>Prueba Técnica para NicePeopleAtWork<br/>
+                         <strong>Jesús Calatayud Moreno (2019)</strong></p>
+                         <p style={{textAlign: "center", opacity: "0.5", fontSize: "20px", paddingTop: "100px", display: this.state.firma, color: this.state.NPAWcolor}}>¡Bienvenid@! Utiliza esta app para <br/> encontrar tu música favorita</p>
                     <div className={this.state.grid}>
                         {lista}
 
                     </div>
                 </div>
 
+                <Footer esFooter={this.state.estiloFooter}/>
+
             </div>
 
-        )
+        );
+
+        
     }
 
 }
